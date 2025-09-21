@@ -2,3 +2,10 @@
 @forward 'components';
 @forward 'layout';
 @forward 'pages';
+
+@font-face {
+  font-family: 'Pretendard-Regular';
+  src: url('/asset/fonts/Pretendard-Regular.otf') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
