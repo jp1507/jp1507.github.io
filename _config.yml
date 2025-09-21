@@ -42,7 +42,7 @@ social:
 
 # Site Verification Settings
 webmaster_verifications:
-  google: [<meta name="google-site-verification" content="xaagmqIF4GtIjx3nIABOc-8N-FMSMUvfsT2BhfPIoAM" />]
+  google: <meta name="google-site-verification" content="xaagmqIF4GtIjx3nIABOc-8N-FMSMUvfsT2BhfPIoAM" />
   bing: # fill in your Bing verification code
   alexa: # fill in your Alexa verification code
   yandex: # fill in your Yandex verification code
