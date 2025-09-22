@@ -1,0 +1,67 @@
+{
+  "$schema": "https://frontmatter.codes/frontmatter.schema.json",
+  "frontMatter.taxonomy.contentTypes": [
+    {
+      "name": "Github Blog",
+      "pageBundle": false,
+      "previewPath": null,
+      "fields": [
+        {
+          "title": "title",
+          "name": "title",
+          "type": "string"
+        },
+        {
+          "title": "Description",
+          "name": "description",
+          "type": "string"
+        },
+        {
+          "title": "date",
+          "name": "date",
+          "type": "datetime",
+          "default": "{{now}}",
+          "dateFormat": "yy-MM-dd"
+        },
+        {
+          "title": "categories",
+          "name": "categories",
+          "type": "categories",
+          "taxonomyLimit": 1,
+          "singleValueAsString": false
+        },
+        {
+          "title": "tags",
+          "name": "tags",
+          "type": "tags",
+          "taxonomyLimit": 1,
+          "singleValueAsString": false
+        },
+        {
+          "title": "Pin",
+          "name": "pin",
+          "type": "boolean",
+          "default": false
+        },
+        {
+          "title": "math",
+          "name": "math",
+          "type": "boolean"
+        }
+      ]
+    }
+  ],
+  "frontMatter.framework.id": "jekyll",
+  "frontMatter.content.publicFolder": "assets",
+  "frontMatter.preview.host": "http://127.0.0.1:4000/posts/",
+  "frontMatter.content.pageFolders": [
+    {
+      "title": "posts",
+      "path": "[[workspace]]/_posts"
+    }
+  ],
+  "frontMatter.website.host": "jp1507.github.io",
+  "frontMatter.dashboard.openOnStart": true,
+  "frontMatter.content.snippets": {},
+  "frontMatter.framework.startCommand": "bundle exec jekyll serve livereload"
+}
