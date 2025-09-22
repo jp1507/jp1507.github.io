@@ -109,14 +109,17 @@ td.rouge-code {
 div[class^='language-'] {
   @extend %rounded;
   @extend %code-snippet-bg;
+
   box-shadow: var(--language-border-color) 0 0 0 1px;
 
   .content > & {
     @include mx.ml-mr(-1rem);
+
     border-radius: 0;
 
     @include bp.sm {
       @include mx.ml-mr(0);
+
       border-radius: v.$radius-lg;
     }
   }
@@ -134,11 +137,11 @@ div[class^='language-'] {
         width: v.$code-dot-size;
         height: v.$code-dot-size;
         border-radius: 50%;
-        background-color: #EB6150;
+        background-color: var(--code-header-muted-color);
         box-shadow: (v.$code-dot-size + v.$code-dot-gap) 0 0
-        #F3B63B,
-            (v.$code-dot-size + v.$code-dot-gap) * 2 0 0
-        #54BB44;
+            var(--code-header-muted-color),
+          (v.$code-dot-size + v.$code-dot-gap) * 2 0 0
+            var(--code-header-muted-color);
       }
 
       span {
