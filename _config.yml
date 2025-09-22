@@ -13,7 +13,7 @@ timezone: Asia/Seoul
 # ↓ --------------------------
 
 title: GSU_J # the main title
-tagline: GSU_J's Game Development # it will display as the subtitle
+tagline: Game Development # it will display as the subtitle
 description: >- # used by seo meta and the atom feed
   Sharing knowledges about Game Development.
 
