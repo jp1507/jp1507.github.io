@@ -222,7 +222,7 @@ Repository의 **Actions** 탭에서 빌드와 배포에 대한 워크플로우�
 >
 > Error: Process completed with exit code 1.
 > ```
-> GitAction에서 해당 오류로 에러가 발생했다면 파일이 > 누락된 것이다. `git add assets/js/dist/ _sass/vendors/ -f`로 누락된 파일을 Push하면 해결된다.
+> GitAction에서 해당 오류로 에러가 발생했다면 파일이 누락된 것이다. `git add assets/js/dist/ _sass/vendors/ -f`로 누락된 파일을 Push하면 해결된다.
 {: .prompt-tip }
 
 > 흰 화면에 `--- layout: home # Index page ---`라는 문구만 나온다면 Node.js 모듈이 제대로 설치되었는지, `assets/js/dist` 내 `assets/js/dist/*.min.js` 등의 파일들이 원격 저장소에 Push 됐는지 확인한다.
