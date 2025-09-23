@@ -27,14 +27,12 @@
           "title": "categories",
           "name": "categories",
           "type": "categories",
-          "taxonomyLimit": 1,
           "singleValueAsString": false
         },
         {
           "title": "tags",
           "name": "tags",
           "type": "tags",
-          "taxonomyLimit": 1,
           "singleValueAsString": false
         },
         {
@@ -53,7 +51,8 @@
   ],
   "frontMatter.framework.id": "jekyll",
   "frontMatter.content.publicFolder": "assets",
-  "frontMatter.preview.host": "http://127.0.0.1:4000/posts/",
+  "frontMatter.preview.host": "http://127.0.0.1:4000/",
+  "frontMatter.preview.pathName": "posts",
   "frontMatter.content.pageFolders": [
     {
       "title": "posts",
