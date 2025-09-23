@@ -92,12 +92,14 @@ Bundler version 2.7.2
 Github 블로그는 상술했듯이 높은 커스터마이징이 장점이다. 하지만 자유롭게 커스터마이징을 하기 위해서는 웹 프로그래밍 지식이 필요한 모양이다. 나같은 게임 개발자는 해당 분야에 대해 문외한이기 때문에 이미 만들어진 테마를 가져다가 쓰면 되겠다.
 
 [Jekyll Themes 바로가기](http://jekyllthemes.org/)
+<!-- markdownlint-disable -->
 > 해당 링크는 http로 접속해야한다.
 {: .prompt-warning }
+<!-- markdownlint-restore -->
 
 ![이미지3](https://imgur.com/rhqXOFM.png)
 
-해당 사이트 말고 여러 사이트가 존재한다. 해당 사이트를 접속하면 jekyll에서 지원하는 다양한 테마가 있다. 그 중 한국에서 가장 많은 자료가 있는 **Chirpy** 테마를 이용해 세팅할 것이다.
+jekyll 테마 사이트는 해당 사이트 말고 여러 개가 존재한다. 그 중 해당 링크로 사이트를 접속하면 jekyll에서 지원하는 다양한 테마가 있다. 그 중 한국에서 가장 많은 자료가 있는 **Chirpy** 테마를 이용해 세팅할 것이다.
 
 ![이미지4](https://imgur.com/nrlCGqv.png)
 
@@ -107,17 +109,21 @@ Github 블로그는 상술했듯이 높은 커스터마이징이 장점이다. �
 ## 3. Github로부터 시작하기
 
 ---
-
+<!-- markdownlint-disable -->
 > 기본적인 Github 관련 기능 설명은 생략한다.
 {: .prompt-info }
+<!-- markdownlint-restore -->
 
 해당 테마를 가져와서 세팅하는 방법은 여럿 존재한다. 그 중에서 가장 간편하고 버그 없는 방법을 소개한다. Chirpy 테마 페이지에서 **Homepage** 버튼을 누르면 해당 Repository로 이동한다. 우측 상단의 **Fork** 버튼을 클릭한다.
 
 ![이미지5](https://imgur.com/yoxTJGR.png)
 
-해당 Repository를 Fork해서 내 Repository로 복제하는 기능이다. 이 페이지에서 Repository의 이름을 사진과 같이 `{Github-ID}.github.io`로 설정해주고 **Create fork** 버튼을 눌러 넘어간다. 이 Repository의 이름은 생성될 블로그의 주소로 사용된다.
+해당 Repository를 Fork해서 내 Repository로 복제하는 기능이다. 이 페이지에서 Repository의 이름을 사진과 같이 `{Github-ID}.github.io`로 설정해주고 **Create fork** 버튼을 눌러 넘어간다. 이 Repository의 이름은 생성될 블로그의 주소로 사용된다.  
+
+<!-- markdownlint-disable -->
 > 반드시 Owner로 표기된 본인의 Github 아이디와 같게 설정한다.
-{: .prompt-warining }
+{: .prompt-warning }
+<!-- markdownlint-restore -->
 
 ![이미지6](https://imgur.com/V2yXmdt.png)
 
@@ -148,8 +154,10 @@ _sass/vendors
 ...
 ```
 
+<!-- markdownlint-disable -->
 > 이 절차가 누락되면 이후 빌드하는 과정에서 에러가 발생하여 블로그 기능이 정상 동작하지 않는다. 잘 따라왔다면 문제가 없겠지만 혹시 문제가 생긴다면 관련 검색을 통해 해결해야한다.
-{: .prompt-warining }
+{: .prompt-warning }
+<!-- markdownlint-restore -->
 
 모든 모듈의 설치가 완료된 후 로컬 환경에서 jekyll을 실행한다.
 ```shell
@@ -183,13 +191,17 @@ Jekyll 항목에서 **Configure** 버튼을 클릭한다.
 
 ![이미지13](https://imgur.com/DsZQz1o.png)
 
-Repository의 **Actions** 탭에서 빌드와 배포에 대한 워크플로우를 확인할 수 있다. 배포에는 약 몇 분 가량 시간이 걸린다. 빌드나 배포 중 생기는 문제와 로그는 여기서 확인하면 된다.
+Repository의 **Actions** 탭에서 빌드와 배포에 대한 워크플로우를 확인할 수 있다. 배포에는 약 몇 분 가량 시간이 걸린다. 빌드나 배포 중 생기는 문제와 로그는 여기서 확인하면 된다.  
 > 배포 중에 문제가 생기면 Github에 등록된 이메일로 알림 메일이 수신된다.
 {: .prompt-tip }
 
 ![이미지14](https://imgur.com/W30nMKR.png)
 
 빌드 및 배포가 완료되고 난 뒤 Repository의 이름인 `https://{Github-ID}.github.io` 주소로 접속해서 테스트 글 및 블로그 기능이 정상적으로 동작하는 지 확인한다.
+
+<!-- markdownlint-disable -->
+> 배포가 완료된 뒤에도 블로그에 바로 적용되지 않는 경우가 있는데, 조금 더 기다리면 블로그 내에 **새 버전의 콘텐츠를 사용할 수 있습니다.**라는 팝업 창이 뜬다. **업데이트** 버튼을 눌러 새로고침하면 변경 사항을 확인할 수 있다.
+{: .prompt-info }
 
 > ```text
 > Error: Can't find stylesheet to import.
@@ -214,7 +226,8 @@ Repository의 **Actions** 탭에서 빌드와 배포에 대한 워크플로우�
 {: .prompt-tip }
 
 > 흰 화면에 `--- layout: home # Index page ---`라는 문구만 나온다면 Node.js 모듈이 제대로 설치되었는지, `assets/js/dist` 내 `assets/js/dist/*.min.js` 등의 파일들이 원격 저장소에 Push 됐는지 확인한다.
-{: .prompt-warining }
+{: .prompt-warning }
+<!-- markdownlint-restore -->
 
 ## 5. 마무리
 
