@@ -51,7 +51,7 @@
   ],
   "frontMatter.framework.id": "jekyll",
   "frontMatter.content.publicFolder": "assets",
-  "frontMatter.preview.host": "http://127.0.0.1:4000/",
+  "frontMatter.preview.host": "http://localhost:1313/",
   "frontMatter.preview.pathName": "posts",
   "frontMatter.content.pageFolders": [
     {
