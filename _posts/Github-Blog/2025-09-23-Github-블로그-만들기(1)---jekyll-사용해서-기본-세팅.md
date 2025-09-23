@@ -46,7 +46,7 @@ Github Pages는 Github에서 제공하는 정적 웹사이트 호스팅 서비�
 
 - 참고 : <https://rubyinstaller.org/downloads/>
 
-<img width="993" height="558" alt="Image" src="https://github.com/user-attachments/assets/1df819a1-e4a9-43b1-90bc-691ab05f99cc" />
+![이미지1](https://imgur.com/xo4FcPS.png)
 
 
 ## 2. Github로 시작하기
