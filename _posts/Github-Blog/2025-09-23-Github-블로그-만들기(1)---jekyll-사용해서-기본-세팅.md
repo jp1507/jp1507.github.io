@@ -226,7 +226,7 @@ Repository의 **Actions** 탭에서 빌드와 배포에 대한 워크플로우�
 {: .prompt-tip }
 
 > 흰 화면에 `--- layout: home # Index page ---`라는 문구만 나온다면 Node.js 모듈이 제대로 설치되었는지, `assets/js/dist` 내 `assets/js/dist/*.min.js` 등의 파일들이 원격 저장소에 Push 됐는지 확인한다.
-{: .prompt-warning }
+{: .prompt-tip }
 <!-- markdownlint-restore -->
 
 ## 5. 마무리
