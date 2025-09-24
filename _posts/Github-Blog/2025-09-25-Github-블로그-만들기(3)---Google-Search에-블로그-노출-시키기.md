@@ -98,5 +98,6 @@ Sitemap까지 등록 완료했다면 모든 과정을 끝냈다. 하지만 바�
 
 이번 포스팅에서는 Google Search Console을 이용해 블로그가 검색에 노출되도록 사이트 인증을 진행해보았다. `_config.yml` 파일에서 다른 사이트에 대한 필드가 있으니 다른 사이트 인증도 해보면 좋을 것 같다. 블로그 기능 추가에 대한 포스팅으로 이어간다.
 
-> 네이버도 Google Search Console과 같은 웹마스터 도구가 있다. [Naver Search Advisor](https://searchadvisor.naver.com/)로 접속해서 진행할 수 있다. Google처럼 `_config.yml`로 가능한지 확실하지 않아서 HTML 파일을 추가하는 방식으로 진행하였다. HTML 파일을 블로그 폴더에 포함시키고 배포한 뒤 인증하면 된다. `_config.yml` 파일로도 인증이 가능한지 댓글로 공유해주시면 감사하겠습니다.
+> 네이버도 Google Search Console과 같은 웹마스터 도구가 있다. [Naver Search Advisor](https://searchadvisor.naver.com/)로 접속해서 진행할 수 있는데, Google처럼 `_config.yml`로 가능한지 확실하지 않아서 HTML 파일을 추가하는 방식으로 진행하였다. HTML 파일을 블로그 폴더에 포함시키고 배포한 뒤 인증하면 된다.  
+> `_config.yml` 파일로도 인증이 가능한지 댓글로 공유해주시면 감사하겠습니다.
 {: .prompt-tip }
