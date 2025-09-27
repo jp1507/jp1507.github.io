@@ -4,5 +4,10 @@ icon: fas fa-info-circle
 order: 4
 ---
 
-> Add Markdown syntax content to file `_tabs/about.md`{: .filepath } and it will show up on this page.
-{: .prompt-tip }
+# GSU_J
+
+- 게임 클라이언트 개발자입니다.
+- 게임 개발에 관련된 기술이나 동작 원리에 대해 관심이 많습니다.
+- 지식 공유에 열정이 있고 적극적으로 임하려고 합니다.
+- 적극적인 의사소통으로 같이 배워가는 동료가 되려고 합니다.
+- 업무에서 모르는게 없는 개발자가 되고 싶습니다.
