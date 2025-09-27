@@ -27,7 +27,7 @@
   --shimmer-bg: linear-gradient(
     90deg,
     rgb(255 255 255 / 0%) 0%,
-    rgba(138 0 0 / 40%) 50% /*rgb(58 55 55 / 40%) 50%*/,
+    rgb(138 0 0 / 40%) 50% /*rgb(58 55 55 / 40%) 50%*/,
     rgb(255 255 255 / 0%) 100%
   );
 
@@ -62,7 +62,7 @@
   --tb-odd-bg: #252526; /* odd rows of the posts' table */
   --tb-even-bg: rgb(31 31 34); /* even rows of the posts' table */
   --tb-border-color: var(--tb-odd-bg);
-  --footnote-target-bg: rgba(224 20 20 / 40%) /*rgb(63 81 181)*/;
+  --footnote-target-bg: rgb(224 20 20 / 40%) /*rgb(63 81 181)*/;
   --btn-share-color: #6c757d;
   --btn-share-hover-color: #d3d5e0;
   --card-bg: #1e1e1e;
