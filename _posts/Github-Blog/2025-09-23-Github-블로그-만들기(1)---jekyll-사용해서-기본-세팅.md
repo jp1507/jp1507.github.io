@@ -1,8 +1,8 @@
 ---
 title: Github 블로그 만들기(1) - jekyll 사용해서 기본 세팅
 date: 2025-09-23
-categories: [Etc, Github Blog ]
-tags: [github, github blog, jekyll, blog, chirpy, velog, tistory, ruby, github 블로그, 깃허브, 블로그, 블로그 만들기 ]
+categories: [Misc, Github Blog]
+tags: [github, github blog, jekyll, blog, chirpy, velog, tistory, ruby, github 블로그, 깃허브, 블로그, 블로그 만들기]
 pin: false
 math: false
 image:

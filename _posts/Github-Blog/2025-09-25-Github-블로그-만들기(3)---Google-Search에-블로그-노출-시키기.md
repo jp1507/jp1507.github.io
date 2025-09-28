@@ -1,7 +1,7 @@
 ---
 title: Github 블로그 만들기(3) - Google Search에 블로그 노출 시키기
 date: 2025-09-25
-categories: [Etc, Github Blog ]
+categories: [Misc, Github Blog ]
 tags: [github, github blog, jekyll, blog, chirpy, velog, tistory, ruby, google search, google search console, naver search advisor, github 블로그, 깃허브, 블로그, 블로그 만들기]
 pin: false
 math: false
