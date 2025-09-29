@@ -232,9 +232,9 @@ main {
   min-width: 2rem;
   text-align: center;
   border-radius: 0.5rem;
-  border: 1px solid var(--btn-border-color);
+  border: 1px solid #720000 /*var(--btn-border-color)*/;
   padding: 0 0.4rem;
-  color: var(--text-muted-color);
+  color: #cbcbcb /*var(--text-muted-color)*/;
   line-height: 1.3rem;
 
   &:not(:last-child) {

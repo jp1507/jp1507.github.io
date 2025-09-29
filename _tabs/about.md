@@ -4,7 +4,7 @@ icon: fas fa-info-circle
 order: 4
 ---
 
-# GSU_J
+## GSU_J
 
 - 게임 클라이언트 개발자입니다.
 - 게임 개발에 관련된 기술이나 동작 원리에 대해 관심이 많습니다.

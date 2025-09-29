@@ -46,9 +46,9 @@
   /* Topbar */
   --topbar-bg: rgb(27 27 30 / 64%);
   --topbar-text-color: var(--text-color);
-  --search-border-color: rgb(82 82 82) /*rgb(55 55 55)*/;
+  --search-border-color: #720000 /*rgb(55 55 55)*/;
   --search-icon-color: #CCCCCC /*rgb(100 102 105)*/;
-  --input-focus-border-color: rgb(163 165 167) /*rgb(112 114 115)*/;
+  --input-focus-border-color: #f72a2a /*rgb(112 114 115)*/;
 
   /* Home page */
   --post-list-text-color: rgb(201 201 201);
@@ -58,13 +58,13 @@
   /* Posts */
   --toc-highlight: rgb(250 22 22) /*rgb(116 178 243)*/;
   --toc-popup-border-color: #373737;
-  --tag-hover: rgb(43 56 62);
+  --tag-hover: #dd1717 /*rgb(43 56 62)*/;
   --tb-odd-bg: #252526; /* odd rows of the posts' table */
   --tb-even-bg: rgb(31 31 34); /* even rows of the posts' table */
   --tb-border-color: var(--tb-odd-bg);
   --footnote-target-bg: rgb(224 20 20 / 40%) /*rgb(63 81 181)*/;
-  --btn-share-color: #6c757d;
-  --btn-share-hover-color: #d3d5e0;
+  --btn-share-color: #9ca3aa /*#6c757d*/;
+  --btn-share-hover-color: #f72626 /*#d3d5e0*/;
   --card-bg: #1e1e1e;
   --card-hover-bg: #464d51;
   --card-shadow: rgb(21 21 21 / 72%) 0 6px 18px 0,
@@ -83,8 +83,8 @@
   --prompt-danger-icon-color: #cd0202;
 
   /* Tags */
-  --tag-border: rgb(59 79 88);
-  --tag-shadow: rgb(32 33 33);
+  --tag-border: #720000 /*rgb(59 79 88)*/;
+  --tag-shadow: #5e3737 /*rgb(32 33 33)*/;
   --dash-color: rgb(63 65 68);
   --search-tag-bg: #292828;
 
