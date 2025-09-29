@@ -44,8 +44,7 @@
     margin: 0 0.35rem 0.5rem 0;
 
     &:hover {
-      @extend %tag-hover;
-      /*transition: all 0.3s ease-in;*/
+      @extend %tag-hover; /*transition: all 0.3s ease-in;*/
     }
   }
 
