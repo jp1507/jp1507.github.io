@@ -1,0 +1,28 @@
+{% comment %} 현재 게시글과 같은 시리즈의 모든 글을 찾습니다. {% endcomment %}
+{% assign series_posts = site.posts | sort: "series_order" %}
+{% assign current_series = page.series %}
+
+{% assign related_posts = '' | split: ',' %}
+{% for post in series_posts %}
+  {% if post.series == current_series %}
+    {% assign related_posts = related_posts | push: post %}
+  {% endif %}
+{% endfor %}
+
+{% comment %} 시리즈가 2개 이상일 때만 표시합니다. {% endcomment %}
+{% if related_posts.size > 1 %}
+<div class="series-nav">
+  <p><strong>📖 {{ current_series }} 시리즈 목차</strong></p>
+  <ul>
+    {% for post in related_posts %}
+      <li>
+        {% if post.url == page.url %}
+          <strong>{{ post.title }} (현재 글)</strong>
+        {% else %}
+          <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+        {% endif %}
+      </li>
+    {% endfor %}
+  </ul>
+</div>
+{% endif %}
