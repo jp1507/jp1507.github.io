@@ -12,17 +12,17 @@
 {% comment %} 시리즈가 2개 이상일 때만 표시합니다. {% endcomment %}
 {% if related_posts.size > 1 %}
 <div class="series-nav">
-  <p><strong>📖 {{ current_series }} 시리즈 목차</strong></p>
-  <ul>
+  <p class="series-title"><strong>📖 {{ current_series }} 시리즈 목차</strong></p>
+  <ol>
     {% for post in related_posts %}
       <li>
         {% if post.url == page.url %}
-          <strong>{{ post.title }} (현재 글)</strong>
+          <strong>{{ post.title }}</strong>
         {% else %}
           <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
         {% endif %}
       </li>
     {% endfor %}
-  </ul>
+  </ol>
 </div>
 {% endif %}
