@@ -63,6 +63,6 @@ Print : {{ var }}!
 
 ![이미지2](https://imgur.com/CiRlCwT.png)
 
-`{% raw %}`와 `{% endraw %}`로 태그 처리된 부분은 Liquid 문법을 비활성화하는 기능을 한다. Liquid 문법이나 다른 템플릿 엔진과 충돌하는 부분에서 유용하게 사용할 수 있다.
+`{Percent raw Percent}`와 `{Percent endraw Percent}`로 태그 처리된 부분은 Liquid 문법을 비활성화하는 기능을 한다. Liquid 문법이나 다른 템플릿 엔진과 충돌하는 부분에서 유용하게 사용할 수 있다.
 
 {% endraw %}
