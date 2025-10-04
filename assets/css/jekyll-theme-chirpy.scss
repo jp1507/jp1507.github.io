@@ -9,3 +9,24 @@
 ';
 
 /* append your custom style below */
+
+.series-nav {
+    /* 외부 여백을 주어 본문과 분리합니다. */
+    margin: 2rem 0; 
+    /* 테두리를 추가하여 별도의 블록임을 시각적으로 강조합니다. */
+    border: 1px solid #e0e0e0;
+    padding: 1rem;
+    border-radius: 5px;
+    background-color: #f9f9f9; 
+}
+
+.series-nav ul {
+    /* ul의 기본 스타일을 제거하여 깔끔하게 만듭니다. */
+    list-style: none;
+    padding-left: 0;
+    margin-top: 0.5rem;
+}
+
+.series-nav li {
+    line-height: 1.6;
+}
