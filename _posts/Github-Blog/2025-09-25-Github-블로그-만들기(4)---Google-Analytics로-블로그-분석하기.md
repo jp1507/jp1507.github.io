@@ -11,6 +11,9 @@ image:
   path: https://imgur.com/l3ku5lP.jpg
 ---
 
+> Chirpy 테마 버전 7.3.1 기준으로 작성
+{: .prompt-info }
+
 ## Google Analytics로 블로그 분석하기
 
 ---
