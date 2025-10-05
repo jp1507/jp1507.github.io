@@ -5,7 +5,6 @@ categories: [Misc, Github Blog]
 tags: [github, github blog, jekyll, blog, chirpy, velog, tistory, ruby, github 블로그, 깃허브, 블로그, 블로그 만들기]
 series: "[Github 블로그 만들기]"
 series_order : 2
-pin: false
 math: false
 image:
   path: https://imgur.com/l3ku5lP.jpg
