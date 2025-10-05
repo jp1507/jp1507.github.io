@@ -1,28 +1,28 @@
-{% assign series_posts = site.posts | sort: "series_order" %}
-{% assign current_series = page.series %}
+{% comment %} 포스팅에 'series' 필드가 정의되어 있으면 실행 {% endcomment %}
+{% if page.series %}
 
-{% comment %} 현재 포스팅과 같은 시리즈의 모든 포스팅을 찾는다. {% endcomment %}
-{% assign related_posts = '' | split: ',' %}
-{% for post in series_posts %}
-  {% if post.series == current_series %}
-    {% assign related_posts = related_posts | push: post %}
+  {% assign series_posts = site.posts | sort: "series_order" %}
+  {% assign current_series = page.series %}
+
+  {% comment %} 같은 시리즈의 모든 포스팅을 찾고 series_order 필드를 기준으로 정렬{% endcomment %}
+  {% assign related_posts = site.posts | where: "series", current_series | sort: "series_order" %}
+
+  {% comment %} 찾은 시리즈 포스팅이 2개 이상일 때만 표시한다.  {% endcomment %}
+  {% if related_posts.size > 1 %}
+  <div class="series-nav">
+    <p class="series-title"><strong>🗂️ {{ current_series }}</strong></p>
+    <ol>
+      {% for post in related_posts %}
+        <li>
+          {% if post.url == page.url %}
+            <strong>{{ post.title }}</strong>
+          {% else %}
+            <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+          {% endif %}
+        </li>
+      {% endfor %}
+    </ol>
+  </div>
   {% endif %}
-{% endfor %}
 
-{% comment %} 찾은 시리즈 포스팅이 2개 이상일 때만 표시한다.  {% endcomment %}
-{% if related_posts.size > 1 %}
-<div class="series-nav">
-  <p class="series-title"><strong>🗂️ {{ current_series }}</strong></p>
-  <ol>
-    {% for post in related_posts %}
-      <li>
-        {% if post.url == page.url %}
-          <strong>{{ post.title }}</strong>
-        {% else %}
-          <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
-        {% endif %}
-      </li>
-    {% endfor %}
-  </ol>
-</div>
 {% endif %}
