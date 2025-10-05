@@ -1,5 +1,5 @@
 ---
-title: "[Error] Liquid syntax error: Variable '{{1, 2}' was not properly terminated with regexp"
+title: "[Github 블로그] Liquid syntax error: Variable '{{1, 2}' was not properly terminated with regexp"
 date: 2025-10-04
 categories: [Misc, Github Blog]
 tags: [github, github blog, jekyll, blog, error, github 블로그, 깃허브, 블로그]
