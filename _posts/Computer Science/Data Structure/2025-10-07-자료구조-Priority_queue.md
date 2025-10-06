@@ -1,6 +1,6 @@
 ---
 title: "[자료구조] Priority_queue"
-date: 2025-10-07 12:00:00 + 9000
+date: 2025-10-07 12:00:00 + 0900
 categories: [Computer Science, Data Structure]
 tags: [Computer Science, Data Structure, Unity, Unreal, Priority_queue, 컴퓨터공학, 자료구조, 유니티, 언리얼, 우선순위 큐]
 series: "자료구조"
@@ -17,6 +17,12 @@ image:
 
 - 모든 원소 중 가장 큰 값이 Top을 유지하도록, 우선순위가 가장 크도록 설계되었다.
 - 내부적으로 Heap이라는 자료구조를 사용하고 있다.
+
+    |      작업      | 시간복잡도  |
+    | :------------: | ----------- |
+    | 루트 노드 조회 | O($1$)      |
+    |   삽입(push)   | O($log{N}$) |
+    |   삭제(pop)    | O($log{N}$) |
 
 ## Priority_queue의 선언
 
