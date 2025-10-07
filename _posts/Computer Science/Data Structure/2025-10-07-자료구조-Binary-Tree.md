@@ -1,6 +1,6 @@
 ---
 title: "[자료구조] Binary Tree"
-date: 2025-10-07 00:25:00 + 0900
+date: 2025-10-07 01:25:00 + 0900
 categories: [Computer Science, Data Structure]
 tags: [Computer Science, Data Structure, Unity, Unreal, binary tree, 컴퓨터공학, 자료구조, 유니티, 언리얼, 이진트리]
 series: "자료구조"
