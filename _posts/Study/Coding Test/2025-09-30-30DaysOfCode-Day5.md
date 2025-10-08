@@ -15,7 +15,7 @@ image:
 ---
 
 **Objective**  
-In this challenge, we will use loops to do some math. Check out the [Tutorial](https://www.hackerrank.com/challenges/30-loops/tutorial) tab to learn more.
+In this challenge, we will use loops to do some math. Check out the [**Tutorial**](https://www.hackerrank.com/challenges/30-loops/tutorial) tab to learn more.
 
 **Task**  
 Given an integer, $n$, print its first $10$ multiples. Each multiple $n \times i$ (where $1 \le i \le 10$) should be printed on a new line in the form: `n x i = result`.

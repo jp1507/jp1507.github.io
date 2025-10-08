@@ -15,7 +15,7 @@ image:
 ---
 
 **Objective**  
-Today, we're discussing data types. Check out the [Tutorial](https://www.hackerrank.com/challenges/30-data-types/tutorial) tab for learning materials and an instructional video!
+Today, we're discussing data types. Check out the [**Tutorial**](https://www.hackerrank.com/challenges/30-data-types/tutorial) tab for learning materials and an instructional video!
 
 **Task**  
 Complete the code in the editor below. The variables $i$, $d$, and $s$ are already declared and initialized for you. You must:
