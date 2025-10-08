@@ -1,6 +1,6 @@
 ---
 title: "Day 6: Let's Review"
-date: 2025-10-08
+date: 2025-09-30
 categories: [Study, Coding Test]
 tags: [algorithm, coding test, cpp, 알고리즘, 코딩테스트, C++]
 series: "HackerRank 30 Days of Code"
