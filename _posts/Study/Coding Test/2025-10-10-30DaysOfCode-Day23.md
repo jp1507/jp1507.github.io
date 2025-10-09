@@ -67,7 +67,7 @@ The input forms the following binary search tree:
 
 ![이미지](https://s3.amazonaws.com/hr-challenge-images/17176/1461696188-8eddd12300-BST.png)
 
-We traverse each level of the tree from the root downward, and we process the nodes at each level from left to right. The resulting level-order traversal is $3 \rarr 2 \rarr 5 \rarr 1 \rarr 4 \rarr 7$, and we print these data values as a single line of space-separated integers.
+We traverse each level of the tree from the root downward, and we process the nodes at each level from left to right. The resulting level-order traversal is $3 \rightarrow 2 \rightarrow 5 \rightarrow 1 \rightarrow 4 \rightarrow 7$, and we print these data values as a single line of space-separated integers.
 
 ## Code
 
