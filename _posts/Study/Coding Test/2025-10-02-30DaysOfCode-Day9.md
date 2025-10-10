@@ -18,12 +18,12 @@ image:
 Today, we are learning about an algorithmic concept called recursion. Check out the [**Tutorial**](https://www.hackerrank.com/challenges/30-recursion/tutorial) tab for learning materials and an instructional video.  
 
 **Recursive Method for Calculating Factorial**  
-  $
+  $$
   factorial(N) = \begin{cases}
   1 & N \le 1 \\
   N \times factorial(N - 1) & \text{otherwise}
   \end{cases}
-  $
+  $$
 
 **Function Description**  
 Complete the factorial function in the editor below. Be sure to use recursion.  
