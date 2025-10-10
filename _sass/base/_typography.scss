@@ -37,12 +37,10 @@
 
 a {
   // @extend %link-color;
-  color: var(--link-color);
   text-decoration: none;
 }
 
 img {
-  
   max-width: 100%;
   height: auto;
   transition: all 0.35s ease-in-out;
