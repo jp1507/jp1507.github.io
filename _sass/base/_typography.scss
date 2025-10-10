@@ -36,8 +36,7 @@
 }
 
 a {
-  // @extend %link-color;
-  text-decoration: none;
+  @extend %link-color; text-decoration: none;
 }
 
 img {
