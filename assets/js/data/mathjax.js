@@ -21,5 +21,8 @@ MathJax = {
     ],
     {%- comment -%} equation numbering {%- endcomment -%}
     tags: 'ams'
+  },
+  loader: {
+    load: ['output/svg']
   }
 };
