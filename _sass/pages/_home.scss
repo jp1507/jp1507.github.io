@@ -135,8 +135,8 @@
       color: var(--btn-patinator-text-color);
       padding: 0 0.6rem;
       display: -webkit-box;
-      justify-content: center;
-      align-items: center;
+      -webkit-box-pack: center;
+      -webkit-box-align: center;
       border-radius: 0.5rem;
       border: 0;
       background-color: inherit;
