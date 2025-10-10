@@ -21,5 +21,14 @@ MathJax = {
     ],
     {%- comment -%} equation numbering {%- endcomment -%}
     tags: 'ams'
+  },
+  loader: {
+    load: ['[tex]/ams', 'output/svg'] // MathJax가 SVG 출력을 로드하도록 지시
+  },
+  startup: {
+    ready() {
+      MathJax.startup.defaultOutput = 'svg'; // 기본 출력 모드를 SVG로 설정
+      MathJax.startup.defaultReady();
+    }
   }
 };
