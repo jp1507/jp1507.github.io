@@ -36,7 +36,7 @@ After the $n$ lines of phone book entries, there are an unknown number of lines 
 - $1 \le queries \le 10^5$
 
 **Output Format**  
-On a new line for each query, print `Not found` if the name has no corresponding entry in the phone book; otherwise, print the full $name$ and $phoneNumber$ in the format `name=phoneNumber`.
+On a new line for each query, print `Not found` if the name has no corresponding entry in the phone book; otherwise, print the full $name$ and $phoneNumber$ in the format `name=phoneNumber`.  
 
 **Sample Input**  
 ```text
@@ -57,18 +57,18 @@ harry=12299933
 ```
 
 **Explanation**  
-We add the following $n = 3$ (Key,Value) pairs to our map so it looks like this:
+We add the following $n = 3$ (Key,Value) pairs to our map so it looks like this:  
 
 $phoneBook = {(sam, 99912222), (tom, 11122222), (harry, 12299933)}$  
-We then process each query and print `key=value` if the queried  is found in the map; otherwise, we print `Not found`.
+We then process each query and print `key=value` if the queried  is found in the map; otherwise, we print `Not found`.  
 
-Query 0: `sam`
+Query 0: `sam`  
 Sam is one of the keys in our dictionary, so we print `sam=99912222`.
 
-Query 1: `edward`
+Query 1: `edward`  
 Edward is not one of the keys in our dictionary, so we print `Not found`.
 
-Query 2: `harry`
+Query 2: `harry`  
 Harry is one of the keys in our dictionary, so we print `harry=12299933`.
 
 ## Code

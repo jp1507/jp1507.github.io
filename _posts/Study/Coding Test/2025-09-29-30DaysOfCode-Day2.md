@@ -21,9 +21,9 @@ In this challenge, you will work with arithmetic operators. Check out the [**Tut
 Given the meal price (base cost of a meal), tip percent (the percentage of the meal price being added as tip), and tax percent (the percentage of the meal price being added as tax) for a meal, find and print the meal's total cost. Round the result to the nearest integer.
 
 **Example**  
-$meal\_cost = 100$  
-$tip\_percent = 15$  
-$tax\_percent = 8$  
+$\text{meal\_cost = 100}$  
+$\text{tip\_percent = 15}$  
+$\text{tax\_percent = 8}$  
 
 A tip of 15% * 100 = 15, and the taxes are 8% * 100 = 8. Print the value $123$ and return from the function.  
 

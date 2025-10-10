@@ -38,12 +38,12 @@ The first line contains $firstName$, $lastName$, and $idNumber$, separated by a 
 
 **Constraints**  
 
-- $1 \le $ length of firstName, length of lastName $\le 10$
-- length of idNumber $= 7$
+- $1 \le \text{length of firstName, length of lastName} \le 10$
+- $\text{length of idNumber} = 7$
 - $0 \le score \le 100$  
 
 **Output Format**  
-Output is handled by the locked stub code. Your output will be correct if your Student class constructor and calculate() method are properly implemented.
+Output is handled by the locked stub code. Your output will be correct if your Student class constructor and `calculate()` method are properly implemented.
 
 **Sample Input**  
 ```text

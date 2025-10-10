@@ -47,8 +47,9 @@ Print a single base-$10$ integer that denotes the maximum number of consecutive 
 ```
 
 **Explanation**  
-The binary representation of $5_{10}$ is $101_2$, so the maximum number of consecutive $1$'s is $1$.  
-The binary representation of $13_{10}$ is $1101_2$, so the maximum number of consecutive $1$'s is $2$.  
+The binary representation of $\text{5}$ is $101_{2}$, so the maximum number of consecutive $\text{1}$'s is $\text{1}$.  
+
+The binary representation of $\text{13}$ is $1101_{2}$, so the maximum number of consecutive $\text{1}$'s is $\text{2}$.  
 
 ## Code
 
