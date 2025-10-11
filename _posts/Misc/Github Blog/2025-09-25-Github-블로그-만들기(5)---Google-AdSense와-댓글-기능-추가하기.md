@@ -83,6 +83,10 @@ Google AdSense는 웹사이트 등을 운영하는 사람이 해당 콘텐츠에
 
 ![이미지8](https://imgur.com/oYkXek2.png)
 
+> 꾸준히 포스팅한 결과 10월 7일에 드디어 블로그가 승인되었다!
+> ![이미지22](https://imgur.com/UfFlHfT.png)
+{: .prompt-info }
+
 ## 블로그에 댓글 기능 추가하기
 
 ---
