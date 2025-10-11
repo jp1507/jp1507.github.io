@@ -57,41 +57,41 @@ self.addEventListener('activate', (event) => {
   );
 });
 
-// self.addEventListener('message', (event) => {
-//   if (event.data === 'SKIP_WAITING') {
-//     self.skipWaiting();
-//   }
-// });
+self.addEventListener('message', (event) => {
+  if (event.data === 'SKIP_WAITING') {
+    self.skipWaiting();
+  }
+});
 
-// self.addEventListener('fetch', (event) => {
-//   if (event.request.headers.has('range')) {
-//     return;
-//   }
+self.addEventListener('fetch', (event) => {
+  if (event.request.headers.has('range')) {
+    return;
+  }
 
-//   event.respondWith(
-//     caches.match(event.request).then((response) => {
-//       if (response) {
-//         return response;
-//       }
+  event.respondWith(
+    caches.match(event.request).then((response) => {
+      if (response) {
+        return response;
+      }
 
-//       return fetch(event.request).then((response) => {
-//         const url = event.request.url;
+      return fetch(event.request).then((response) => {
+        const url = event.request.url;
 
-//         if (purge || event.request.method !== 'GET' || !verifyUrl(url)) {
-//           return response;
-//         }
+        if (purge || event.request.method !== 'GET' || !verifyUrl(url)) {
+          return response;
+        }
 
-//         // See: <https://developers.google.com/web/fundamentals/primers/service-workers#cache_and_return_requests>
-//         let responseToCache = response.clone();
+        // See: <https://developers.google.com/web/fundamentals/primers/service-workers#cache_and_return_requests>
+        let responseToCache = response.clone();
 
-//         caches.open(swconf.cacheName).then((cache) => {
-//           cache.put(event.request, responseToCache);
-//         });
-//         return response;
-//       });
-//     })
-//   );
-// });
+        caches.open(swconf.cacheName).then((cache) => {
+          cache.put(event.request, responseToCache);
+        });
+        return response;
+      });
+    })
+  );
+});
 
 // self.addEventListener('install', () => {
 //   self.skipWaiting();
