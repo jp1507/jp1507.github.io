@@ -153,7 +153,7 @@ int main() {
 
 ```
 
-제목처럼 이진 트리의 Level order traversal을 구현하는 문제이다. 이진트리 순회 방법은 전위, 중위, 후위 뿐만 아니라 트리의 레벨 순서대로 순회하는 Level order traversal이 있다. 기본 구조는 다음과 같다.
+이진 트리의 Level order traversal을 구현하는 문제이다. 이진트리 순회 방법은 전위, 중위, 후위 뿐만 아니라 트리의 레벨 순서대로 순회하는 Level order traversal이 있다. 기본 구조는 다음과 같다.
 
 1. 루트 노드를 방문
 2. 루트 노드의 Left child를 방문
