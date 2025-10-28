@@ -10,41 +10,26 @@
   {% comment %} 찾은 시리즈 포스팅이 2개 이상일 때만 표시한다.  {% endcomment %}
   {% if related_posts.size > 1 %}
   <div class="series-nav">
-    <div class="series-header" onclick="toggleSeries(this)">
-      <p class="series-title"><strong>🗂️ {{ current_series }}</strong></p>
-      <span class="toggle-icon">▼</span>
-    </div>
-    <div class="series-content expanded">
-      <ol>
+    <details>
+      <summary class="series-header">
+        <span class="series-title"><strong>🗂️ {{ current_series }}</strong></span>
+        <span class="series-count">전체 {{ related_posts.size }}편</span>
+        <span class="toggle-icon">▼</span>
+      </summary>
+      <ol class="series-list">
         {% for post in related_posts %}
-          <li>
+          <li {% if post.url == page.url %}class="current-post"{% endif %}>
             {% if post.url == page.url %}
               <strong>{{ post.title }}</strong>
+              <span class="current-badge">현재 글</span>
             {% else %}
               <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
             {% endif %}
           </li>
         {% endfor %}
       </ol>
+    </details>
   </div>
-
-  <script>
-    function toggleSeries(header) {
-      const content = header.nextElementSibling;
-      const icon = header.querySelector('.toggle-icon');
-      
-      if (content.classList.contains('expanded')) {
-        content.classList.remove('expanded');
-        content.classList.add('collapsed');
-        icon.style.transform = 'rotate(-90deg)';
-      } else {
-        content.classList.remove('collapsed');
-        content.classList.add('expanded');
-        icon.style.transform = 'rotate(0deg)';
-      }
-    }
-  </script>
-
   {% endif %}
 
 {% endif %}

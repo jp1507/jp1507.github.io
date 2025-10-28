@@ -10,73 +10,194 @@
 
 /* append your custom style below */
 
-.series-nav {
-  /* 외부 여백을 주어 본문과 분리합니다. */
-  margin: 1rem 0; 
-  /* 테두리를 추가하여 별도의 블록임을 시각적으로 강조합니다. */
-  border: 1px solid #720000;
-  padding: 1rem;
-  border-radius: 5px;
-  background-color: #212121;
-
-  .series-header {
-    cursor: pointer;
-    user-select: none;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0.5rem 0;
-
-    &:hover {
-      .series-title {
-        color: var(--link-color);
-      }
-    }
-  
-    /* 목차 타이틀 */
-    .series-title {
-      font-size: 1.5rem;
-      margin-bottom: 0.8rem;
-      color: #e9e9e9;
-      font-weight: bold;
-    }
-
-    .toggle-icon {
-      transition: transform 0.3s ease;
-      font-size: 0.8rem;
-      color: var(--text-muted-color);
-    }
-  }
-
-  ol li::marker {
-    color: #adadad;
-    font-size: 1.1rem;
-    font-style: italic;
-    font-weight: bold;
-  }
-
-  &.expanded {
-      max-height: 2000px;
-      opacity: 1;
-      margin-top: 1rem;
-    }
-
-    &.collapsed {
-      max-height: 0;
-      opacity: 0;
-      margin-top: 0;
-    }
-
-  ol {
-    padding-left: 50px !important; 
-  }
-
-  li {
-    line-height: 1.5;
-  }
-}
-
+/* 하이퍼 링크 볼드체로 강조 */
 .post-content a,
   .content a {
     font-weight: bold !important;
   }
+
+// 시리즈 네비게이션 스타일
+.series-nav {
+  margin: 2rem 0;
+  padding: 1.5rem;
+  background-color: var(--prompt-tip-bg, #f0f9ff);
+  border-left: 4px solid var(--prompt-tip-icon-color, #0ea5e9);
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+
+  details {
+    summary {
+      cursor: pointer;
+      user-select: none;
+      list-style: none;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0.5rem 0;
+      font-size: 1.1rem;
+      transition: color 0.2s ease;
+      
+      // 기본 details 마커 제거
+      &::-webkit-details-marker {
+        display: none;
+      }
+      
+      &::marker {
+        display: none;
+      }
+
+      .series-title {
+        flex: 1;
+      }
+
+      .series-count {
+        display: inline-block;
+        padding: 0.2rem 0.6rem;
+        background-color: var(--label-color, #6b7280);
+        color: white;
+        border-radius: 0.3rem;
+        font-size: 0.75rem;
+        font-weight: 600;
+        margin: 0 0.5rem;
+      }
+
+      .toggle-icon {
+        transition: transform 0.3s ease;
+        font-size: 0.8rem;
+        color: var(--text-muted-color, #6b7280);
+        display: inline-block;
+      }
+
+      &:hover {
+        color: var(--link-color, #0ea5e9);
+      }
+    }
+
+    // 열렸을 때 아이콘 회전
+    &[open] summary .toggle-icon {
+      transform: rotate(180deg);
+    }
+
+    .series-list {
+      margin-top: 1rem;
+      padding-left: 1.5rem;
+      animation: slideDown 0.3s ease;
+      
+      li {
+        margin: 0.6rem 0;
+        line-height: 1.6;
+        transition: all 0.2s ease;
+
+        &.current-post {
+          background-color: var(--prompt-info-bg, #eff6ff);
+          padding: 0.3rem 0.5rem;
+          margin-left: -0.5rem;
+          border-radius: 0.3rem;
+        }
+
+        strong {
+          color: var(--heading-color, #1f2937);
+        }
+
+        a {
+          color: var(--link-color, #0ea5e9);
+          text-decoration: none;
+          
+          &:hover {
+            text-decoration: underline;
+            color: var(--link-color-hover, #0284c7);
+          }
+        }
+
+        .current-badge {
+          display: inline-block;
+          padding: 0.1rem 0.4rem;
+          background-color: var(--prompt-tip-icon-color, #0ea5e9);
+          color: white;
+          border-radius: 0.2rem;
+          font-size: 0.7rem;
+          font-weight: 600;
+          margin-left: 0.5rem;
+        }
+      }
+    }
+  }
+}
+
+// 슬라이드 다운 애니메이션
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+// .series-nav {
+//   /* 외부 여백을 주어 본문과 분리합니다. */
+//   margin: 1rem 0; 
+//   /* 테두리를 추가하여 별도의 블록임을 시각적으로 강조합니다. */
+//   border: 1px solid #720000;
+//   padding: 1rem;
+//   border-radius: 5px;
+//   background-color: #212121;
+
+//   .series-header {
+//     cursor: pointer;
+//     user-select: none;
+//     display: flex;
+//     justify-content: space-between;
+//     align-items: center;
+//     padding: 0.5rem 0;
+
+//     &:hover {
+//       .series-title {
+//         color: var(--link-color);
+//       }
+//     }
+  
+//     /* 목차 타이틀 */
+//     .series-title {
+//       font-size: 1.5rem;
+//       margin-bottom: 0.8rem;
+//       color: #e9e9e9;
+//       font-weight: bold;
+//     }
+
+//     .toggle-icon {
+//       transition: transform 0.3s ease;
+//       font-size: 0.8rem;
+//       color: var(--text-muted-color);
+//     }
+//   }
+
+//   ol li::marker {
+//     color: #adadad;
+//     font-size: 1.1rem;
+//     font-style: italic;
+//     font-weight: bold;
+//   }
+
+//   &.expanded {
+//       max-height: 2000px;
+//       opacity: 1;
+//       margin-top: 1rem;
+//     }
+
+//     &.collapsed {
+//       max-height: 0;
+//       opacity: 0;
+//       margin-top: 0;
+//     }
+
+//   ol {
+//     padding-left: 50px !important; 
+//   }
+
+//   li {
+//     line-height: 1.5;
+//   }
+// }
