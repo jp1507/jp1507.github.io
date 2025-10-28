@@ -47,7 +47,7 @@
 
       &:hover {
         .series-title {
-          color: var(--link-color);
+          color: #f72626
         }
       }
 
@@ -68,20 +68,22 @@
         border-radius: 0.3rem;
         font-size: 0.75rem;
         font-weight: 600;
-        margin: 0 0.5rem;
+        margin: 0 1rem;
+        vertical-align: text-bottom;
       }
 
       .toggle-icon {
         transition: transform 0.3s ease;
-        font-size: 0.8rem;
-        color: #adadad;
+        font-size: 1rem;
+        color: #e9e9e9;
         display: inline-block;
+        vertical-align: text-bottom;
       }
     }
 
     // 열렸을 때 아이콘 회전
     &[open] summary .toggle-icon {
-      transform: rotate(180deg);
+      transform: rotate(-90deg);
     }
 
     .series-list {
@@ -108,20 +110,6 @@
           border-radius: 0.3rem;
         }
 
-        strong {
-          color: #e9e9e9;
-        }
-
-        a {
-          color: var(--link-color);
-          text-decoration: none;
-          
-          &:hover {
-            text-decoration: underline;
-            color: var(--link-color-hover);
-          }
-        }
-
         .current-badge {
           display: inline-block;
           padding: 0.1rem 0.4rem;
@@ -131,6 +119,7 @@
           font-size: 0.7rem;
           font-weight: 600;
           margin-left: 0.5rem;
+          vertical-align: text-bottom;
         }
       }
     }
