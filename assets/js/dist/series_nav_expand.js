@@ -17,20 +17,23 @@ document.addEventListener('DOMContentLoaded', () => {
                 seriesList.classList.remove('expanded');
                 seriesList.classList.add('collapsed');
                 toggleButton.setAttribute('aria-expanded', 'false');
+                toggleButton.querySelector('span').textContent = "시리즈 목차 [펼치기]";
                 
                 // 버튼 텍스트 및 아이콘 업데이트
-                toggleButton.querySelector('span').textContent = "시리즈 목차 [펼치기]";
-                toggleButton.querySelector('#toggle-icon').classList.replace('fa-chevron-up', 'fa-chevron-down');
-
+                if(toggleIcon) {
+                    toggleIcon.classList.replace('fa-chevron-up', 'fa-chevron-down');
+                }
             } else {
                 // 현재 접힌 상태이므로 -> 펼치기(Expand)
                 seriesList.classList.remove('collapsed');
                 seriesList.classList.add('expanded');
                 toggleButton.setAttribute('aria-expanded', 'true');
+                toggleButton.querySelector('span').textContent = "시리즈 목차 [접기]";
                 
                 // 버튼 텍스트 및 아이콘 업데이트
-                toggleButton.querySelector('span').textContent = "시리즈 목차 [접기]";
-                toggleButton.querySelector('#toggle-icon').classList.replace('fa-chevron-down', 'fa-chevron-up');
+                if(toggleIcon) {
+                    toggleIcon.classList.replace('fa-chevron-down', 'fa-chevron-up');
+                }
             }
         });
     }
