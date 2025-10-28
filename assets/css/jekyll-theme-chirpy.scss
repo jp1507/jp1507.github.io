@@ -47,3 +47,44 @@
 .content a {
   font-weight: bold !important;
 }
+
+/* 시리즈 목차 토글 버튼 */
+/* 1. 토글 버튼 스타일 */
+#series-toggle {
+    background: none;
+    border: 1px solid var(--main-border-color);
+    color: var(--text-color);
+    padding: 0.5rem 1rem;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    margin-bottom: 0.5rem;
+    display: flex;
+    justify-content: space-between; /* 아이콘을 오른쪽으로 밀기 */
+    align-items: center;
+}
+
+/* 2. 접힌 상태 스타일 */
+.toggle-list {
+    max-height: 500px; /* 초기 충분한 높이 */
+    overflow: hidden; /* 접힐 때 내용을 숨김 */
+    transition: max-height 0.3s ease-out; /* 애니메이션 효과 */
+}
+
+/* 3. 접기 상태 클래스 */
+.toggle-list.collapsed {
+    max-height: 0; /* 접힌 상태 */
+    border: 0 !important; /* 접혔을 때 불필요한 테두리 제거 */
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+/* 4. 펼침/접힘 아이콘 회전 */
+#toggle-icon {
+    transition: transform 0.3s ease-out;
+}
+.collapsed #toggle-icon {
+    transform: rotate(180deg); /* 접힌 상태에서는 아이콘을 아래로 뒤집음 */
+}
+
+/* 시리즈 목차 토글 버튼 */
