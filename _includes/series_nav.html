@@ -10,24 +10,41 @@
   {% comment %} 찾은 시리즈 포스팅이 2개 이상일 때만 표시한다.  {% endcomment %}
   {% if related_posts.size > 1 %}
   <div class="series-nav">
-    <p class="series-title"><strong>🗂️ {{ current_series }}</strong></p>
-    <button id="series-toggle" aria-expanded="true" aria-controls="series-list">
-      <span>시리즈 목차 [접기/펼치기]</span>
-      <i class="fas fa-chevron-up" id="toggle-icon"></i> 
-    </button>
-    <div id="series-list" class="toggle-list expanded">
-    <ol>
-      {% for post in related_posts %}
-        <li>
-          {% if post.url == page.url %}
-            <strong>{{ post.title }}</strong>
-          {% else %}
-            <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
-          {% endif %}
-        </li>
-      {% endfor %}
-    </ol>
+    <div class="series-header" onclick="toggleSeries(this)">
+      <p class="series-title"><strong>🗂️ {{ current_series }}</strong></p>
+      <span class="toggle-icon">▼</span>
+    </div>
+    <div class="series-content expanded">
+      <ol>
+        {% for post in related_posts %}
+          <li>
+            {% if post.url == page.url %}
+              <strong>{{ post.title }}</strong>
+            {% else %}
+              <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+            {% endif %}
+          </li>
+        {% endfor %}
+      </ol>
   </div>
+
+  <script>
+    function toggleSeries(header) {
+      const content = header.nextElementSibling;
+      const icon = header.querySelector('.toggle-icon');
+      
+      if (content.classList.contains('expanded')) {
+        content.classList.remove('expanded');
+        content.classList.add('collapsed');
+        icon.style.transform = 'rotate(-90deg)';
+      } else {
+        content.classList.remove('collapsed');
+        content.classList.add('expanded');
+        icon.style.transform = 'rotate(0deg)';
+      }
+    }
+  </script>
+
   {% endif %}
 
 {% endif %}
