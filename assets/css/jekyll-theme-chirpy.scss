@@ -26,6 +26,19 @@
   border-radius: 5px;
   background-color: #212121;
 
+  .series-bookmark {
+    position: relative;
+    top: -1.5rem;
+    margin-right: 1rem;
+    background: #720000;
+    width: 40px;
+    height: 60px;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 85%, 0 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
   details {
     summary {
       cursor: pointer;
@@ -86,10 +99,18 @@
       transform: rotate(-90deg);
     }
 
+    &[open] .series-list {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
     .series-list {
       margin-top: 1rem;
       padding-left: 50px !important;
-      animation: slideDown 0.3s ease;
+      // animation: slideDown 0.3s ease;
+      opacity: 0;
+      transform: translateY(-10px);
+      transition: opacity 0.3s ease, transform 0.3s ease;
       
       li {
         line-height: 1.5;
