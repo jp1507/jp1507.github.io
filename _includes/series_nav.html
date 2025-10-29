@@ -10,6 +10,9 @@
   {% comment %} 찾은 시리즈 포스팅이 2개 이상일 때만 표시한다.  {% endcomment %}
   {% if related_posts.size > 1 %}
   <div class="series-nav">
+    <div class="series-bookmark">
+      <i class="fas fa-bookmark"></i>
+    </div>
     <details>
       <summary class="series-header">
         <span class="series-title"><strong>🗂️ {{ current_series }}</strong></span>
