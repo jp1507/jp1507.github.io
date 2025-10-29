@@ -26,26 +26,6 @@
   border-radius: 5px;
   background-color: #212121;
 
-  .series-bookmark {
-    position: absolute;
-    top: -1px;
-    right: 2rem;
-    z-index: 5;
-    
-    i {
-      font-size: 1.8rem;
-      color: #720000;
-      filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));
-      transition: all 0.3s ease;
-      display: block;
-      
-      &:hover {
-        transform: scale(1.1);
-        color: #a00000;
-      }
-    }
-  }
-
   details {
     summary {
       cursor: pointer;
