@@ -1,5 +1,6 @@
 ---
 title: "[Github 블로그] 포스팅 커스텀 자동완성 : Code Snippets"
+date: 2025-11-02
 categories: [Misc, Github Blog]
 tags: [github, github blog, jekyll, blog, error, github 블로그, 깃허브, 블로그, markdown, Code Snippets, 자동완성, VS Code, VS]
 image:
