@@ -8,7 +8,11 @@
   },
   "[markdown]": {
     "editor.defaultFormatter": "yzhang.markdown-all-in-one",
-    "editor.quickSuggestions": true
+    "editor.quickSuggestions": {
+      "comments": "on",
+      "strings": "on",
+      "other": "on"
+    }
   },
   // Formatter
   "[html][liquid]": {
